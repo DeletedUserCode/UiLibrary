@@ -16,22 +16,22 @@ local library = {
 	},
 	colors = {
 		main = Color3.fromRGB(255, 60, 60),
-		background = Color3.fromRGB(30, 30, 30),
-		outerBorder = Color3.fromRGB(15, 15, 15),
+		background = Color3.fromRGB(0, 0, 0),
+		outerBorder = Color3.fromRGB(0, 0, 0),
 		innerBorder = Color3.fromRGB(0, 0, 0),
-		topGradient = Color3.fromRGB(35, 35, 35),
-		bottomGradient = Color3.fromRGB(29, 29, 29),
-		sectionBackground = Color3.fromRGB(35, 34, 34),
-		section = Color3.fromRGB(176, 175, 176),
+		topGradient = Color3.fromRGB(0, 0, 0),
+		bottomGradient = Color3.fromRGB(0, 0, 0),
+		sectionBackground = Color3.fromRGB(0, 0, 0),
+		section = Color3.fromRGB(255, 60, 60),
 		otherElementText = Color3.fromRGB(129, 127, 129),
 		elementText = Color3.fromRGB(147, 145, 147),
-		elementBorder = Color3.fromRGB(20, 20, 20),
+		elementBorder = Color3.fromRGB(0, 0, 0),
 		selectedOption = Color3.fromRGB(55, 55, 55),
-		unselectedOption = Color3.fromRGB(40, 40, 40),
-		hoveredOptionTop = Color3.fromRGB(65, 65, 65),
-		unhoveredOptionTop = Color3.fromRGB(50, 50, 50),
-		hoveredOptionBottom = Color3.fromRGB(45, 45, 45),
-		unhoveredOptionBottom = Color3.fromRGB(35, 35, 35),
+		unselectedOption = Color3.fromRGB(0, 0, 0),
+		hoveredOptionTop = Color3.fromRGB(0, 0, 0),
+		unhoveredOptionTop = Color3.fromRGB(0, 0, 0),
+		hoveredOptionBottom = Color3.fromRGB(0, 0, 0),
+		unhoveredOptionBottom = Color3.fromRGB(0, 0, 0),
 		tabText = Color3.fromRGB(255, 255, 255)
 	},
 	gui_parent = (function()
@@ -323,7 +323,7 @@ do
 				if library.Backdrop then
 					library.Backdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
 					library.Backdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
-					library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(0, 0, 0)
+					library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(255, 60, 60)
 					library.Backdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
 				end
 			end)
@@ -1609,7 +1609,7 @@ function library:CreateWindow(options, ...)
 	innerBackdrop.Size = UDim2.fromScale(1, 1)
 	innerBackdrop.ZIndex = -1
 	innerBackdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
-	innerBackdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(0, 0, 0)
+	innerBackdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(255, 60, 60)
 	innerBackdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
 	innerBackdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
 	library.Backdrop = innerBackdrop
@@ -6719,14 +6719,14 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "",
+			Placeholder = "rbxassetid://5553946656",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "",
+			Value = "rbxassetid://5553946656",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
 			Flag = "__Designer.Background.ImageColor",
-			Value = Color3.new(0, 0, 0),
+			Value = Color3.new(255, 60, 60),
 			Callback = updatecolorsnotween,
 			__designer = 1
 		}}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
@@ -6871,7 +6871,7 @@ function library:CreateWindow(options, ...)
 			library.Backdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
 			library.Backdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
 			library.Backdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
-			library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(0, 0, 0)
+			library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(255, 60, 60)
 		end
 		local function setbackground(t, Asset, Transparency, Visible)
 			if Visible == nil and t ~= nil and type(t) ~= "table" then
@@ -6983,7 +6983,7 @@ function library:CreateWindow(options, ...)
 				if library.Backdrop then
 					library.Backdrop.Visible = library_flags["__Designer.Background.UseBackgroundImage"] and true
 					library.Backdrop.Image = resolveid(library_flags["__Designer.Background.ImageAssetID"], "__Designer.Background.ImageAssetID") or ""
-					library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(0, 0, 0)
+					library.Backdrop.ImageColor3 = library_flags["__Designer.Background.ImageColor"] or Color3.new(255, 60, 60)
 					library.Backdrop.ImageTransparency = (library_flags["__Designer.Background.ImageTransparency"] or 85) / 100
 				end
 			end)
