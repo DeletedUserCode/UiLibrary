@@ -26,7 +26,7 @@ local library = {
 		otherElementText = Color3.fromRGB(129, 127, 129),
 		elementText = Color3.fromRGB(147, 145, 147),
 		elementBorder = Color3.fromRGB(0, 0, 0),
-		selectedOption = Color3.fromRGB(55, 55, 55),
+		selectedOption = Color3.fromRGB(0, 0, 0),
 		unselectedOption = Color3.fromRGB(0, 0, 0),
 		hoveredOptionTop = Color3.fromRGB(0, 0, 0),
 		unhoveredOptionTop = Color3.fromRGB(0, 0, 0),
@@ -6732,7 +6732,7 @@ function library:CreateWindow(options, ...)
 		}}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
 			Name = "Image Transparency",
 			Flag = "__Designer.Background.ImageTransparency",
-			Value = 95,
+			Value = 85,
 			Min = 0,
 			Max = 100,
 			Format = "Image Transparency: %s%%",
