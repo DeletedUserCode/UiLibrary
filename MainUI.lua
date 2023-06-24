@@ -15,14 +15,14 @@ local library = {
 		easingDirection = Enum.EasingDirection.Out
 	},
 	colors = {
-		main = Color3.fromRGB(0, 255, 0),
+		main = Color3.fromRGB(135, 206, 235),
 		background = Color3.fromRGB(0, 0, 0),
 		outerBorder = Color3.fromRGB(0, 0, 0),
 		innerBorder = Color3.fromRGB(0, 0, 0),
 		topGradient = Color3.fromRGB(0, 0, 0),
 		bottomGradient = Color3.fromRGB(0, 0, 0),
 		sectionBackground = Color3.fromRGB(0, 0, 0),
-		section = Color3.fromRGB(0, 255, 0),
+		section = Color3.fromRGB(135, 206, 235),
 		otherElementText = Color3.fromRGB(129, 127, 129),
 		elementText = Color3.fromRGB(147, 145, 147),
 		elementBorder = Color3.fromRGB(0, 0, 0),
